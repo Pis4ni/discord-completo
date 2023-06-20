@@ -113,6 +113,9 @@ h3{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
 .gap{
     gap: 3rem;
 }
@@ -218,6 +221,7 @@ h3{
 }
 .spacing{
     margin: var(--y-padding2) auto 0 auto;
+    padding: 0 0 var(--y-padding2) 0
 }
 
 .btn{
