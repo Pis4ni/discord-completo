@@ -9,7 +9,19 @@ body{
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* SPECIAL SELECTORS */
+/* *DEBUG */
+
+.deb{
+    border: 4px dotted black;
+}    
+.deb1{
+    border: 2px dotted rgb(255, 0, 0);
+}    
+.deb3{
+    border: 2px dotted rgb(255, 255, 255);
+}    
+
+/* *SPECIAL SELECTORS */
 
 :root{
 
@@ -29,6 +41,7 @@ body{
     --color13:#7fffd4;
     --nav-t-col:#ffffff;
     --btn-t-col:#000000;
+    --btn-dk:#23272a;
     
     /* spacing */
 
@@ -39,7 +52,7 @@ body{
     --height5:600px; /* 2col layout height */
     --height6:900px;
     
-    --width1:900px;
+    --width1:750px; /* jumbotron contenent width */
     
     --x-padding1:10px ; /* navbar li spacing */
 
@@ -50,30 +63,12 @@ body{
 nav{
     text-align: center;
 }
-nav>ul{
-    list-style-type: none;
-    margin: 0;
-    padding:0;
-}
-
-nav li{
-    display: inline;
-    padding: 0 var(--x-padding1);
-}
-
-nav li>a{
-    color: var(--nav-t-col);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 1.3rem;
-}
 
 footer{
     background-color: var(--color9);
 }
 
-/* UTILITIES */
+/* *UTILITIES */
 
 .container{
     max-width: 1180px;
@@ -115,6 +110,9 @@ footer{
 }
 .between{
     justify-content: space-between;
+}
+.around{
+    justify-content: space-around;
 }
 
 .x-center{
@@ -204,17 +202,72 @@ footer{
 
 .btn{
     border-radius: 2rem;
-    padding: .4rem .8rem;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
 }
 
 .wh{
     color:var(--btn-t-col);
     background-color: var(--nav-t-col);
 }
+.dk{
+    color:var(--nav-t-col);
+    background-color: var(--btn-dk);
+}
 
-/* Specific */
+.small{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    
+}
+
+
+/* *SPECIFIC */
+
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+nav li{
+    display: inline;
+    padding: 0 var(--x-padding1);
+}
+
+nav li>a{
+    color: var(--nav-t-col);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.jumbotext{
+    color: var(--nav-t-col);
+    text-align: center;
+    padding: 1rem;
+}
+.jumbotext>*{
+    margin-top: 2rem;
+    
+}
+.jumbotext>h1{
+    margin: 3rem 0;
+    font-size: 3.3rem;
+}
+
+.jumbotext:nth-child(1){
+    font-size: 1.2rem;
+    line-height: 1.7em;
+    font-weight: 600;
+}
+
+.btn-cont{
+    padding: 0 3rem;
+}
 
 main>div:nth-of-type(even){
     background: var(--color7);
@@ -227,14 +280,9 @@ main>div:nth-of-type(even){
     border-bottom:2px solid var(--color7) ;
 }
 
-/* DEBUG */
-
-.deb{
-    border: 4px dotted black;
-}    
-.deb1{
-    border: 2px dotted rgb(255, 0, 0);
-}    
-.deb3{
-    border: 2px dotted rgb(255, 255, 255);
-}    
+.jumbotron{
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: var(--height5);
+}
