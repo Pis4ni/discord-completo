@@ -299,8 +299,13 @@ nav li>a{
     padding: 0 3rem;
 }
 
-main>div:nth-of-type(even){
-    background: var(--color7);
+main>div:nth-child(2){
+    background-image: url(../img/wave.svg);
+
+}
+main>div:nth-child(3),
+main>div:nth-child(4){
+    background-color: #d6d6d6;
 }
 .rev{
     flex-direction: row-reverse;
