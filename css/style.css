@@ -43,7 +43,7 @@ body{
     --btn-t-col:#000000;
     --btn-dk:#23272a;
     --btn-spec:#8ea1e1;
-    
+    --rel-link:#7289da;
     /* spacing */
 
     --height1:40px;
@@ -347,7 +347,8 @@ main p{
 
 .links h3,
 .links h4{
-    color: var(--btn-spec);
+    color: var(--rel-link);
+    margin-bottom: 1rem;
     
 
 }
@@ -365,4 +366,14 @@ main p{
 option{
     background-color: var(--color9);
     color: var(--nav-t-col);
+}
+
+.link-list ul{
+    list-style-type: none;
+}
+.link-list ul li a{
+    color: var(--nav-t-col);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
 }
