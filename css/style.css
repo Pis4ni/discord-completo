@@ -112,6 +112,11 @@ h3{
 .flex{
     display: flex;
 }
+
+.gap{
+    gap: 3rem;
+}
+
 .xy-switch{
     flex-direction: column;
 }
@@ -325,4 +330,21 @@ main p{
     background-size: contain;
     background-position:top;
     height: 5rem
+}
+
+.links{
+    color: var(--nav-t-col);
+    font-size: 1.5rem;
+    
+}
+
+.lang-flag{
+    width: 2rem
+}
+
+.links h3,
+.links h4{
+    color: var(--btn-spec);
+    
+
 }
